@@ -1,0 +1,3 @@
+the folders here are named numerically based on the order that they were released since i started archiving versions of my website.
+
+i moved them to a separate repository, since them being in the repository for my actual website was bloating it (especially with the images).
