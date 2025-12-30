@@ -1,0 +1,74 @@
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    scrollbar-color: #866 #000;
+
+    &::selection {
+        background-color: #866;
+        color: #000;
+    }
+}
+
+body {
+    width: 45ch;
+
+    background-color: #000;
+    color: #856;
+
+    font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+main > section[id] {
+    background-color: #1004;
+    border: 1px solid #4238;
+    padding: 0px 1ch;
+    margin-bottom: 1em;
+
+    > p {
+        text-indent: 1ch;
+    }
+
+    transition:
+            box-shadow 2s 0.5s ease-out;
+
+    &:hover {
+        box-shadow:
+            0.25em -0.25em #181212;
+
+        transition:
+            box-shadow 1s ease-out;
+    }
+}
+
+.underlined {
+    text-decoration: 1px dashed underline;
+}
+
+a[href]:not([href=""]) {
+    color: #a66;
+    transition: text-shadow 2s 0.5s ease-out;
+    &:hover {
+        text-shadow:
+            0.25em -0.25em 0px #422;
+        transition: text-shadow 1s ease-out;
+    }
+}
+
+ul {
+    list-style: inside circle;
+}
+
+span.pulse {
+    text-wrap: nowrap;
+    animation: 3s 0s infinite ease-out alternate pulse;
+}
+
+@keyframes pulse {
+    0%, 80% {
+        color: currentColor;
+    } 100% {
+        color: #c66;
+    }
+}
